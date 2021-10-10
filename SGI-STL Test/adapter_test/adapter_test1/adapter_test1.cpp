@@ -7,6 +7,8 @@
 
 using namespace std;
 
+/*adapter主要可用于3个部分;iterator,container and function. This Demo is mainly focus on iterator.
+we can code other two parts*/
 int main()
 {
 	string s = "AdapterTest";

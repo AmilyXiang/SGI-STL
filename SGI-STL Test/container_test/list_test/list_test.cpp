@@ -94,7 +94,7 @@ int main()
 	printList(list7);
 
 	list<string>::iterator range_begin = list7.begin();
-	list<string>::iterator range_end = list7.begin();
+	list<string>::iterator range_end = list7.begin();//博主写错了？这个地方如果不是list.rbegin(),就是list.end()?
 	advance(range_begin, 2);
 	advance(range_end, 5);
 
