@@ -16,7 +16,7 @@ namespace myAllocator
 		std::set_new_handler(0);  // 分配失败，抛出std::bad_alloc
 
 	    // 空间的分配实现，调用 ::operator new() 全局函数
-		T* tmp = (T*)(::operator new((size_t)(size * sizeof(T))));
+		T* tmp = (T*)(::operator new((size_t)(size * sizeof(T))));//::operator表示外层的命名空间，在此处即系统默认的命名空间的new 函数
 
 		if (tmp == 0) {
 			std::cerr << "out of memory" << std::endl;
